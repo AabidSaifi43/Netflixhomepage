@@ -1,0 +1,767 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Martel+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(8, 8, 8, 0.89);
+}
+
+/* navbar  */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    min-height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    align-self: center;
+}
+
+.contain {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    padding: 0 20px;
+    border-bottom: 1px solid rgb(174, 173, 173);
+    min-height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    align-self: center;
+}
+
+.plan-logo {
+    width: 180px;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    filter: contrast(200);
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.plan-sign button {
+    padding: 10px;
+    border: none;
+    width: 100px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background: transparent;
+    border-radius: 3px;
+}
+
+.plan {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.commit {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.commit button {
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 8vh;
+    border-radius: 5px;
+}
+
+.choose {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.choose h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.plan #tick {
+    font-size: 2.7rem;
+    color: red;
+}
+
+.choose #tick {
+    font-size: 1.8rem;
+    color: red;
+    text-align: center;
+}
+
+.plan p {
+    margin-top: 20px;
+    font-size: 12px
+}
+
+.plan h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.logo {
+    width: 180px;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    filter: contrast(200);
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.sign {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+select {
+    cursor: pointer;
+    font-size: 26px;
+    border: none;
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+    color: white;
+    background-color: #121111;
+}
+
+.sign button {
+    background-color: #e50914;
+    padding: 10px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+}
+
+
+/* main  */
+
+.main {
+    width: 100%;
+    margin-top: -100px;
+    background-size: cover;
+    align-items: center;
+    overflow-x: hidden;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+    min-height: 710px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(https://assets.nflxext.com/ffe/siteui/vlv3/a1dc92ca-091d-4ca9-a05b-8cd44bbfce6a/f9368347-e982-4856-a5a4-396796381f28/RS-en-20191230-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+}
+
+.area {
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin-top: 70px;
+}
+
+.area h1 {
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.area h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.area h4 {
+    font-size: 25px;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+.area button {
+    font-size: 25px;
+    border: none;
+    width: 250px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* container1 */
+
+.container1 {
+    width: 100%;
+    min-height: 560px;
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.container1 .image {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    object-fit: contain;
+}
+
+.container1 .image img {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: contain;
+    object-position: center;
+    align-self: center;
+    max-width: 100%;
+    height: 350px;
+    position: absolute;
+}
+
+
+.container1 .image video {
+    width: 90%;
+}
+
+.text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: center;
+    align-content: center;
+}
+
+.text p {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.text h1 {
+    font-size: 3.125rem;
+}
+
+/* .container2 */
+
+.container2 {
+    width: 100%;
+    min-height: 560px;
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.container2 .image {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: contain;
+    align-self: center;
+    max-width: 100%;
+    height: 350px;
+}
+
+.text1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: center;
+    align-content: center;
+}
+
+.text1 p {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.text1 h1 {
+    font-size: 3.125rem;
+}
+
+
+/* .container3 */
+
+.container3 {
+    width: 100%;
+    min-height: 560px;
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.container3 .image {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    object-fit: contain;
+}
+
+.container3 .image img {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: contain;
+    object-position: center;
+    align-self: center;
+    max-width: 100%;
+    height: 350px;
+    position: absolute;
+}
+
+
+.container3 .image video {
+    width: 90%;
+}
+
+.text2 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: center;
+    align-content: center;
+}
+
+.text2 p {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.text2 h1 {
+    font-size: 3.125rem;
+}
+
+
+
+/* .container4 */
+
+.container4 {
+    width: 100%;
+    min-height: 560px;
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.container4 .image {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: contain;
+    align-self: center;
+    max-width: 100%;
+    height: 350px;
+}
+
+.text3 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: center;
+    align-content: center;
+}
+
+.text3 p {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.text3 h1 {
+    font-size: 3.125rem;
+}
+
+
+
+/* .question */
+
+
+.question {
+    width: 100%;
+    min-height: 950px;
+    background-color: #000;
+    margin-top: 10px;
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.question-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-item {
+    background-color: rgb(47, 46, 46);
+    margin: 10px;
+    height: auto;
+    width: 80vw;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.question-item:hover {
+    background-color: #333;
+}
+
+.question-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.question-item button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    color: white;
+    text-align: left;
+}
+
+.question-item i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.faq-answer {
+    max-height: 0;
+    font-size: 1.4rem;
+    color: white;
+    overflow: hidden;
+    line-height: 35px;
+    text-align: justify;
+    padding: 5px 25px 5px 20px;
+    transition: max-height 0.6s ease-in-out;
+}
+
+.faq-answer.active {
+    max-height: 500px;
+}
+
+.faq-answer-enter {
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out;
+}
+
+.faq-answer-leave {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out;
+}
+
+.question h1 {
+    color: white;
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+#quest {
+    font-size: 25px;
+    border: none;
+    width: 250px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* footer  */
+
+.footer {
+    padding: 50px 0;
+    margin-top: 10px;
+    width: 100vw;
+    background-color: black;
+    height: 50vh;
+}
+
+.footer .container {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100%;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.footer1,
+.footer2,
+.footer3,
+.footer4 {
+    display: flex;
+    height: 100%;
+    width: 19vw;
+    flex-direction: column;
+}
+
+.footer1 #language {
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+    color: white;
+    background-color: #121111;
+}
+
+.footer1 h4 {
+    color: rgb(193, 191, 191);
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.footer-link {
+    margin-top: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(193, 191, 191);
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+
+@media (min-width: 250px) and (max-width: 980px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        min-height: 250px;
+        margin-bottom: 30px;
+
+    }
+
+    .container1,
+    .container2,
+    .container3,
+    .container4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        align-self: center;
+    }
+
+    .container2 .image {
+        width: 100%;
+    }
+
+    .area h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .area h3 {
+        margin-top: 10px;
+    }
+
+    .container1 img,
+    .container2 img,
+    .container3 img,
+    .container4 img {
+        width: 60%;
+    }
+
+    h4 {
+        color: white;
+    }
+
+    .text,
+    .text1,
+    .text2,
+    .text3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .text h1,
+    .text1 h1,
+    .text2 h1,
+    .text3 h1 {
+        font-size: 2rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .text p,
+    .text1 p,
+    .text2 p,
+    .text3 p {
+        font-size: 1.2rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .quest .textbox {
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .quest {
+        width: 80%;
+        min-height: 75px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer .container {
+        max-width: 90vw;
+    }
+
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4 {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer1 #language {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4 {
+        width: 100%;
+    }
+
+}
